@@ -134,49 +134,49 @@ let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.ge
 ╰━━━━━━━━━━━⬣
 
 ╭━ MULTI JUEGOS ━⬣
-┃🫧➺ .Abrazo
-┃🫧➺ .Cumple
-┃🫧➺ .Follar
-┃🫧➺ .Huevo
-┃🫧➺ .Formartrio
-┃🫧➺ .Sorteo
-┃🫧➺ .Nalga
-┃🫧➺ .Sega
-┃🫧➺ _.math |matemáticas
-┃🫧➺ _.lanzar cara | cruz
-┃🫧➺ .ppt piedra : papel : tijera
-┃🫧➺ .tictactoe | ttt sala
-┃🫧➺ .deltictactoe | delttt
-┃🫧➺ .topgays
-┃🫧➺ .topotakus
-┃🫧➺ .toppajer@s
-┃🫧➺ .topput@s
-┃🫧➺ .topintegrantes
-┃🫧➺ .toplagrasa | topgrasa
-┃🫧➺ .toppanafrescos
-┃🫧➺ .topshiposters
-┃🫧➺ .toplindos | toplind@s
-┃🫧➺ .topfamosos/@s
-┃🫧➺ .topparejas
-┃🫧➺ .gay | gay @tag
-┃🫧➺ .gay2 nombre : @tag
-┃🫧➺ .lesbiana nombre : @tag
-┃🫧➺ .manca nombre : @tag
-┃🫧➺ .manco nombre : @tag
-┃🫧➺ .pajero nombre : @tag
-┃🫧➺ .pajera nombre : @tag
-┃🫧➺ .puto nombre : @tag
-┃🫧➺ .puta nombre : @tag
-┃🫧➺ .rata nombre : @tag
-┃🫧➺ .love nombre : @tag
-┃🫧➺ .doxear nombre : @tag
-┃🫧➺ .doxxeame
-┃🫧➺ .pregunta texto
-┃🫧➺ .apostar | slot cantidad
-┃🫧➺ .formarpareja
-┃🫧➺ .dado
-┃🫧➺ .verdad
-┃🫧➺ .reto
+┃🕷️ ➺ .Abrazo
+┃🕷️ ➺ .Cumple
+┃🕷️ ➺ .Follar
+┃🕷️ ➺ .Huevo
+┃🕷️ ➺ .Formartrio
+┃🕷️ ➺ .Sorteo
+┃🕷️ ➺ .Nalga
+┃🕷️ ➺ .Sega
+┃🕷️ ➺ _.math |matemáticas
+┃🕷️ ➺ _.lanzar cara | cruz
+┃🕷️ ➺ .ppt piedra : papel : tijera
+┃🕷️ ➺ .tictactoe | ttt sala
+┃🕷️ ➺ .deltictactoe | delttt
+┃🕷️ ➺ .topgays
+┃🕷️ ➺ .topotakus
+┃🕷️ ➺ .toppajer@s
+┃🕷️ ➺ .topput@s
+┃🕷️ ➺ .topintegrantes
+┃🕷️ ➺ .toplagrasa | topgrasa
+┃🕷️ ➺ .toppanafrescos
+┃🕷️ ➺ .topshiposters
+┃🕷️ ➺ .toplindos | toplind@s
+┃🕷️ ➺ .topfamosos/@s
+┃🕷️ ➺ .topparejas
+┃🕷️ ➺ .gay | gay @tag
+┃🕷️ ➺ .gay2 nombre : @tag
+┃🕷️ ➺ .lesbiana nombre : @tag
+┃🕷️ ➺ .manca nombre : @tag
+┃🕷️ ➺ .manco nombre : @tag
+┃🕷️ ➺ .pajero nombre : @tag
+┃🕷️ ➺ .pajera nombre : @tag
+┃🕷️ ➺ .puto nombre : @tag
+┃🕷️ ➺ .puta nombre : @tag
+┃🕷️ ➺ .rata nombre : @tag
+┃🕷️ ➺ .love nombre : @tag
+┃🕷️ ➺ .doxear nombre : @tag
+┃🕷️ ➺ .doxxeame
+┃🕷️ ➺ .pregunta texto
+┃🕷️ ➺ .apostar | slot cantidad
+┃🕷️ ➺ .formarpareja
+┃🕷️ ➺ .dado
+┃🕷️ ➺ .verdad
+┃🕷️ ➺ .reto
 ╰━━━━━━━━━━━⬣
 
 ╭━━━[ AJUSTES - CHATS ]━━━⬣
@@ -209,69 +209,69 @@ let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.ge
 ╰━━━━━━━━━━━━⬣
 
 ╭━〔 GRUPO - RESUMEN 〕━⬣
-┃🧾➺ .configuracion
-┃🧾➺ .settings
-┃🧾➺ .vergrupo
+┃🔖 ➺ .configuracion
+┃🔖 ➺ .settings
+┃🔖 ➺ .vergrupo
 ╰━━━━━━━━━━━⬣
 
 ╭━[ DESCARGAS | DOWNLOADS ]━⬣
-┃🍭➺ .imagen | image texto
-┃🍭➺ .pinterest | dlpinterest texto
-┃🍭➺ .wallpaper|wp texto
-┃🍭➺ .play | play2 texto link
-┃🍭➺ .tw |twdl | twitter link
-┃🍭➺ .facebook | fb link
-┃🍭➺ .verig | igstalk usuario(a)
-┃🍭➺ .ighistoria | igstory usuario(a)
-┃🍭➺ .tiktok link
-┃🍭➺ .tiktokimagen | ttimagen link
-┃🍭➺ .tiktokfoto | tiktokphoto usuario(a)
-┃🍭➺ .vertiktok | tiktokstalk usuario(a)
-┃🍭➺ .mediafire | dlmediafire link
-┃🍭➺ .clonarepo | gitclone link
-┃🍭➺ .consejo
-┃🍭➺ .morse codificar texto
-┃🍭➺ .morse decodificar morse
-┃🍭➺ .fraseromantica
-┃🍭➺ .historia
+┃🕸️ ➺ .imagen | image texto
+┃🕸️ ➺ .pinterest | dlpinterest texto
+┃🕸️ ➺ .wallpaper|wp texto
+┃🕸️ ➺ .play | play2 texto link
+┃🕸️ ➺ .tw |twdl | twitter link
+┃🕸️ ➺ .facebook | fb link
+┃🕸️ ➺ .verig | igstalk usuario(a)
+┃🕸️ ➺ .ighistoria | igstory usuario(a)
+┃🕸️ ➺ .tiktok link
+┃🕸️ ➺ .tiktokimagen | ttimagen link
+┃🕸️ ➺ .tiktokfoto | tiktokphoto usuario(a)
+┃🕸️ ➺ .vertiktok | tiktokstalk usuario(a)
+┃🕸️ ➺ .mediafire | dlmediafire link
+┃🕸️ ➺ .clonarepo | gitclone link
+┃🕸️ ➺ .consejo
+┃🕸️ ➺ .morse codificar texto
+┃🕸️ ➺ .morse decodificar morse
+┃🕸️ ➺ .fraseromantica
+┃🕸️ ➺ .historia
 ╰━━━━━━━━━━━⬣
 
 ╭━[ CHAT ANONIMO ]━⬣
-┃👤➺ .chatanonimo | anonimochat
-┃👤➺ .anonimoch
-┃👤➺ .start
-┃👤➺ .next
-┃👤➺ .leave
+┃🧵 ➺ .chatanonimo | anonimochat
+┃🧵 ➺ .anonimoch
+┃🧵 ➺ .start
+┃🧵 ➺ .next
+┃🧵 ➺ .leave
 ╰━━━━━━━━━━━⬣
 
 ╭━[ CONFIGURACIÓN - GRUPOS ]━⬣
-┃🌐➺ .add numero
-┃🌐➺ .sacar | ban | kick  @tag
-┃🌐➺ .grupo abrir : cerrar
-┃🌐➺ .group open : close
-┃🌐➺ .daradmin | promote @tag
-┃🌐➺ .quitar | demote @tag
-┃🌐➺ .banchat
-┃🌐➺ .unbanchat
-┃🌐➺ .banuser @tag
-┃🌐➺ .unbanuser @tag
-┃🌐➺ .admins texto
-┃🌐➺ .invocar texto
-┃🌐➺ .tagall texto
-┃🌐➺ .hidetag texto
-┃🌐➺ .infogrupo | infogroup
-┃🌐➺ .grupotiempo | grouptime Cantidad
-┃🌐➺ .advertencia @tag
-┃🌐➺ .deladvertencia @tag
-┃🌐➺ .delwarn @tag
-┃🌐➺ .enlace | link
-┃🌐➺ .newnombre | nuevonombre texto
-┃🌐➺ .newdesc | descripcion texto
-┃🌐➺ .setwelcome | bienvenida texto
-┃🌐➺ .setbye | despedida texto
-┃🌐➺ .nuevoenlace | resetlink
-┃🌐➺ .on
-┃🌐➺ .off
+┃⚪️ ➺ .add numero
+┃⚫️ ➺ .sacar | ban | kick  @tag
+┃🟣 ➺ .grupo abrir : cerrar
+┃🔵 ➺ .group open : close
+┃🟢 ➺ .daradmin | promote @tag
+┃🟡 ➺ .quitar | demote @tag
+┃🟠 ➺ .banchat
+┃🔴 ➺ .unbanchat
+┃🟤 ➺ .banuser @tag
+┃⚪️ ➺ .unbanuser @tag
+┃⚫️ ➺ .admins texto
+┃🟣 ➺ .invocar texto
+┃🔵 ➺ .tagall texto
+┃🟢 ➺ .hidetag texto
+┃🟡 ➺ .infogrupo | infogroup
+┃🟠 ➺ .grupotiempo | grouptime Cantidad
+┃🔴 ➺ .advertencia @tag
+┃🟤 ➺ .deladvertencia @tag
+┃⚪️ ➺ .delwarn @tag
+┃⚫️ ➺ .enlace | link
+┃🟣 ➺ .newnombre | nuevonombre texto
+┃🔵 ➺ .newdesc | descripcion texto
+┃🟢 ➺ .setwelcome | bienvenida texto
+┃🟡 ➺ .setbye | despedida texto
+┃🟠 ➺ .nuevoenlace | resetlink
+┃🔴 ➺ .on
+┃🔘 ➺ .off
 ╰━━━━━━━━━━━⬣
 
 ╭━━[ CONTENIDO ]━━⬣
@@ -279,153 +279,154 @@ let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.ge
 ╰━━━━━━━━━━━⬣
 
 ╭━[ CONVERTIDORES ]━⬣
-┃🛰️➺ .toimg | img | jpg sticker
-┃🛰️➺ .toanime | jadianime foto
-┃🛰️➺ .tomp3 | mp3 video o nota de voz
-┃🛰️➺ .tovn | vn video o audio
-┃🛰️➺ .tovideo audio
-┃🛰️➺ .tourl video, imagen
-┃🛰️➺ .toenlace  video, imagen o audio
-┃🛰️➺ .tts es texto
+┃🧸 ➺ .toimg | img | jpg sticker
+┃🧸 ➺ .toanime | jadianime foto
+┃🧸 ➺ .tomp3 | mp3 video o nota de voz
+┃🧸 ➺ .tovn | vn video o audio
+┃🧸 ➺ .tovideo audio
+┃🧸 ➺ .tourl video, imagen
+┃🧸 ➺ .toenlace  video, imagen o audio
+┃🧸 ➺ .tts es texto
 ╰━━━━━━━━━━━⬣
 
 
 ╭━━━[ EFECTOS ]━━⬣
-┃⛺ .simpcard @tag
-┃⛺ .hornycard @tag
-┃⛺ .lolice @tag
-┃⛺ .ytcomment texto
-┃⛺ .itssostupid
-┃⛺ .pixelar
-┃⛺ .blur
+┃🦠 .simpcard @tag
+┃🦠 .hornycard @tag
+┃🦠 .lolice @tag
+┃🦠 .ytcomment texto
+┃🦠 .itssostupid
+┃🦠 .pixelar
+┃🦠 .blur
 ╰━━━━━━━━━━━⬣
 
 ╭━[ RANDOM | ANIME ]━⬣
-┃🧩 .chico
-┃🧩 .cristianoronaldo
-┃🧩 .meme
-┃🧩 .meme2
-┃🧩 .itzy
-┃🧩 .blackpink
-┃🧩 .kpop blackpink : exo : bts
-┃🧩 .lolivid
-┃🧩 .loli
-┃🧩 .navidad
-┃🧩 .ppcouple
-┃🧩 .neko
-┃🧩 .waifu
-┃🧩 .akira
-┃🧩 .akiyama
-┃🧩 .anna
-┃🧩 .asuna
-┃🧩 .ayuzawa
-┃🧩 .boruto
-┃🧩 .chiho
-┃🧩 .chitoge
-┃🧩 .deidara
-┃🧩 .erza
-┃🧩 .elaina
-┃🧩 .eba
-┃🧩 .emilia
-┃🧩 .hestia
-┃🧩 .hinata
-┃🧩 .inori
-┃🧩 .isuzu
-┃🧩 .itachi
-┃🧩 .itori
-┃🧩 .kaga
-┃🧩 .kagura
-┃🧩 .kaori
-┃🧩 .keneki
-┃🧩 .kotori
-┃🧩 .kurumi
-┃🧩 .madara
-┃🧩 .mikasa
-┃🧩 .miku
-┃🧩 .minato
-┃🧩 .naruto
-┃🧩 .nezuko
-┃🧩 .sagiri
-┃🧩 .sasuke
-┃🧩 .sakura
-┃🧩 .cosplay
+┃🛣️ .chico
+┃🌁 .cristianoronaldo
+┃🌉 .meme
+┃🌌 .meme2
+┃🌃 .itzy
+┃🏙️ .blackpink
+┃🌇 .kpop blackpink : exo : bts
+┃🎆 .lolivid
+┃🎇 .loli
+┃🌠 .navidad
+┃🌄 .ppcouple
+┃🌅 .neko
+┃🏞️ .waifu
+┃🎑 .akira
+┃🗾 .akiyama
+┃🛣️ .anna
+┃🌁 .asuna
+┃🌉 .ayuzawa
+┃🌃 .boruto
+┃🌌 .chiho
+┃🏙️ .chitoge
+┃🌆 .deidara
+┃🌇 .erza
+┃🎆 .elaina
+┃🌠 .eba
+┃🌄 .emilia
+┃🌅 .hestia
+┃🏞️ .hinata
+┃🎑 .inori
+┃🛣️ .isuzu
+┃🕋 .itachi
+┃🛤️ .itori
+┃🏦 .kaga
+┃🛕 .kagura
+┃⛩️ .kaori
+┃🏤 .keneki
+┃🏣 .kotori
+┃🏪 .kurumi
+┃🏩 .madara
+┃🏥 .mikasa
+┃🏢 .miku
+┃⛰️ .minato
+┃⛺️ .naruto
+┃🌋 .nezuko
+┃🏜️ .sagiri
+┃🏔️ .sasuke
+┃🏝️ .sakura
+┃🏖️ .cosplay
 ╰━━━━━━━━━━━⬣
 
 ╭━[ MODIFICAR AUDIO]⬣
-┃🧰 .bass
-┃🧰 .blown
-┃🧰 .deep
-┃🧰 .earrape
-┃🧰 .fast
-┃🧰 .fat
-┃🧰 .nightcore
-┃🧰 .reverse
-┃🧰 .robot
-┃🧰 .slow
-┃🧰 .smooth
-┃🧰 .tupai
+┃🚁 .bass
+┃🚆 .blown
+┃🚑 .deep
+┃🚘 .earrape
+┃🚍 .fast
+┃🚜 .fat
+┃🚛 .nightcore
+┃🚒 .reverse
+┃🚌 .robot
+┃🚙 .slow
+┃🚕 .smooth
+┃🚗 .tupai
 ╰━━━━━━━━━━━⬣
 
 ╭━━[ BÚSQUEDAS🔍]━⬣
-┃🔍➺ .animeinfo texto
-┃🔍➺ .mangainfo texto
-┃🔍➺ .google texto
-┃🔍➺ .googlelyrics texto
-┃🔍➺ .letra | lirik texto
-┃🔍➺ .ytsearch | yts texto
-┃🔍➺ .wiki | wikipedia texto
+┃🌎 ➺ .animeinfo texto
+┃🌎 ➺ .mangainfo texto
+┃🌎 ➺ .google texto
+┃🌎 ➺ .googlelyrics texto
+┃🌎 ➺ .letra | lirik texto
+┃🌎 ➺ .ytsearch | yts texto
+┃🌎 ➺ .wiki | wikipedia texto
 ╰━━━━━━━━━━━⬣
 
 ╭━[ HERRAMIENTAS ]━⬣
 ┃🛠️ .afk motivo
 ┃🛠️ .acortar url
 ┃🛠️ .calc operacion math
-┃🛠️ .del respondre a mensaje del Bot
+┃🛠️ .del 
 ┃🛠️ .qrcode texto
 ┃🛠️ .readmore texto1|texto2
-┃🛠️ .spamwa numero|texto|cantidad
+┃🛠️ .spamwa #/texto/10
 ┃🛠️ .styletext texto
 ┃🛠️ .traducir texto
 ┃🛠️ .morse codificar texto
-┃🛠️ .morse decodificar morse
+┃🛠️ .morse decodificar
 ┃🛠️ .encuesta | poll Motivo
 ┃🛠️ .horario
 ╰━━━━━━━━━━━⬣
 
 ╭━[ FUNCIÓN RPG ]━⬣
-┃⚗️➺ .pase premium
-┃⚗️➺ .pass premium
-┃⚗️➺ .listapremium | listprem
-┃⚗️➺ .transfer tipo cantidad @tag
-┃⚗️➺ .dar tipo cantidad @tag
-┃⚗️➺ .enviar tipo cantidad @tag
-┃⚗️➺ .balance
-┃⚗️➺ .cartera | wallet
-┃⚗️➺ .experiencia | exp
-┃⚗️➺ .top | lb | leaderboard
-┃⚗️➺ .rol | rango
-┃⚗️➺ .inventario | inventory
-┃⚗️➺ .aventura | adventure
-┃⚗️➺ .caza | cazar | hunt
-┃⚗️➺ .pescar | fishing
-┃⚗️➺ .animales
-┃⚗️➺ .alimentos
-┃⚗️➺ .curar | heal
-┃⚗️➺ .sell
-┃⚗️➺ .verificar | registrar
-┃⚗️➺ .perfil | profile
-┃⚗️➺ .myns
-┃⚗️➺ .unreg numero de serie
-┃⚗️➺ .minardiamantes | minargemas
-┃⚗️➺ .minargatacoins | minarcoins
-┃⚗️➺ .minarexperiencia | minarexp
-┃⚗️➺ .minar : minar2 : minar3
-┃⚗️➺ .reclamar | regalo | claim
-┃⚗️➺ .cadahora | hourly
-┃⚗️➺ .cadasemana | semanal | weekly
-┃⚗️➺ .cadames | mes | monthly
-┃⚗️➺ .cofre | abrircofre | coffer
-┃⚗️➺ .trabajar | work
+┃🥧 ➺ .pase premium
+┃🍿 ➺ .pass premium
+┃🥛 ➺ .listapremium
+┃🥫➺ .transfer tipo cantidad 
+┃🍛 ➺ .dar tipo cantidad 
+┃🦪 ➺ .enviar tipo cantidad 
+┃🍦 ➺ .balance
+┃🍘 ➺ .cartera | wallet
+┃🌰 ➺ .experiencia | exp
+┃☕️ ➺ .top | lb | leaderboard
+┃🍼 ➺ .rol | rango
+┃🥮 ➺ .inventario | inventory
+┃🍤 ➺ .aventura | adventure
+┃🍚 ➺ .caza | cazar | hunt
+┃🍩 ➺ .pescar | fishing
+┃🍫 ➺ .animales
+┃🍭 ➺ .alimentos
+┃🥟 ➺ .curar | heal
+┃🥓 ➺ .sell
+┃🍝 ➺ .verificar | registrar
+┃🥩 ➺ .perfil | profile
+┃🥗 ➺ .myns
+┃🍔 ➺ .unreg # de serie
+┃🌭 ➺ .minardiamantes 
+┃🧇 ➺ .minarcoins
+┃🥖 ➺ .minarexp
+┃🧀 ➺ .minar : minar2
+┃🥚 ➺ .minar3
+┃🧁 ➺ .reclamar | regalo 
+┃🍧 ➺ .cadahora | hourly
+┃🍰 ➺ .cadasemana  
+┃🥪 ➺ .cadames | mes 
+┃🍱 ➺ .cofre | abrircofre 
+┃🍖 ➺ .trabajar | work
 ╰━━━━━━━━━━━⬣
 
 ╭━[ TOP EN OPTIMUS ]━⬣
@@ -433,23 +434,23 @@ let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.ge
 ╰━━━━━━━━━━━⬣
 
 ╭━[ STICKERS ]━⬣
-┃🎐 .sticker | s imagen o video
-┃🎐 .sticker | s url de tipo jpg
-┃🎐 .emojimix 😺+😆
-┃🎐 .dado
+┃🌮 .sticker | s img/video
+┃🍟 .sticker | s url tipo jpg
+┃🥨 .emojimix 😺+😆
+┃🧊 .dado
 ╰━━━━━━━━━━━⬣
 
 ╭━[ MODIFICAR STICKERS ]━⬣
-┃💡 .wm packname|author
-┃💡 .wm texto1|texto2
+┃🧃 .wm packname|author
+┃🧃 .wm texto1|texto2
 ╰━━━━━━━━━━━⬣
 
 ╭━[ STICKERS DINÁMICOS ]━⬣
-┃⛱️ .palmaditas | pat @tag
-┃⛱️ .bofetada | slap @tag
-┃⛱️ .golpear @tag
-┃⛱️ .besar | kiss @tag
-┃⛱️ .alimentar | food @tag
+┃🍥 .palmaditas | pat @tag
+┃🍥 .bofetada | slap @tag
+┃🍥 .golpear @tag
+┃🍥 .besar | kiss @tag
+┃🍥 .alimentar | food @tag
 ╰━━━━━━━━━━━⬣
 
 ╭━[ MENU PARA PROPIETARIO/A ]━⬣
