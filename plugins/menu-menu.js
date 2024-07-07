@@ -97,32 +97,32 @@ let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.ge
 ┃PERMANENTE | MENSUAL
 ╰━━━━━━━━━━━⬣
 
-╭━〔 FUNCION VS / REGLAS / FICHA〕━⬣
-┃🍬➺ .Fem4
-┃🍬➺ .Fem6
-┃🍬➺ .FemInterna4
-┃🍬➺ .FemInterna6
-┃🍬➺ .vs8fem
-┃🍬➺ .vs12fem
-┃🍬➺ .scrimfem
-┃🍬➺ .Masc4
-┃🍬➺ .Masc6
-┃🍬➺ .MascInterna4
-┃🍬➺ .MascInterna6
-┃🍬➺ .Mixto4
-┃🍬➺ .Mixto6
-┃🍬➺ .MixtoInterna4
-┃🍬➺ .MixtoInterna6
-┃🍬➺ .reglasclk
-┃🍬➺ .guerra
-┃🍬➺ .apos
-┃🍬➺ .Ficha / jugador
-┃🍬➺ .Vs4
-┃🍬➺ .Vs6
-┃🍬➺ .Vs8
-┃🍬➺ .Vs12
-┃🍬➺ .Vs16
-┃🍬➺ .Vs20
+╭━ VS / REGLAS / FICHA━⬣
+┃🫅🌺 ➺ .Fem4
+┃🫅🌺 ➺ .Fem6
+┃🫅🌺 ➺ .FemInterna4
+┃🫅🌺 ➺ .FemInterna6
+┃🫅🌺 ➺ .vs8fem
+┃🫅🌺 ➺ .vs12fem
+┃🫅🌺 ➺ .scrimfem
+┃🤴 ➺ .Masc4
+┃🤴 ➺ .Masc6
+┃🤴 ➺ .MascInterna4
+┃🤴 ➺ .MascInterna6
+┃👫 ➺ .Mixto4
+┃👫 ➺ .Mixto6
+┃👫 ➺ .MixtoInterna4
+┃👫 ➺ .MixtoInterna6
+┃📏 ➺ .reglasclk
+┃🇬🇬 ➺ .guerra
+┃📐 ➺ .apos
+┃📝 ➺ .Ficha / jugador
+┃👑 ➺ .Vs4
+┃👑 ➺ .Vs6
+┃👑 ➺ .Vs8
+┃👑 ➺ .Vs12
+┃👑 ➺ .Vs16
+┃👑 ➺ .Vs20
 ╰━━━━━━━━━━━━⬣
 
 ╭━〔 TREND TIK TOK 〕⬣
@@ -130,7 +130,7 @@ let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.ge
 ╰━━━━━━━━━━━⬣
 
 ╭━〔 SPAM Y EDITS 〕⬣
-┃👤➺ .SpamComu
+┃🗂️➺ .SpamComu
 ╰━━━━━━━━━━━⬣
 
 ╭━ MULTI JUEGOS ━⬣
@@ -142,8 +142,8 @@ let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.ge
 ┃🕷️ ➺ .Sorteo
 ┃🕷️ ➺ .Nalga
 ┃🕷️ ➺ .Sega
-┃🕷️ ➺ _.math |matemáticas
-┃🕷️ ➺ _.lanzar cara | cruz
+┃🕷️ ➺ .math |matemáticas
+┃🕷️ ➺ .lanzar cara | cruz
 ┃🕷️ ➺ .ppt piedra : papel : tijera
 ┃🕷️ ➺ .tictactoe | ttt sala
 ┃🕷️ ➺ .deltictactoe | delttt
@@ -281,11 +281,11 @@ let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.ge
 ╭━[ CONVERTIDORES ]━⬣
 ┃🧸 ➺ .toimg | img | jpg sticker
 ┃🧸 ➺ .toanime | jadianime foto
-┃🧸 ➺ .tomp3 | mp3 video o nota de voz
-┃🧸 ➺ .tovn | vn video o audio
+┃🧸 ➺ .tomp3 |video|nota
+┃🧸 ➺ .tovn |vn|vid|audio
 ┃🧸 ➺ .tovideo audio
 ┃🧸 ➺ .tourl video, imagen
-┃🧸 ➺ .toenlace  video, imagen o audio
+┃🧸 ➺ .toenlace  vid|img|au
 ┃🧸 ➺ .tts es texto
 ╰━━━━━━━━━━━⬣
 
