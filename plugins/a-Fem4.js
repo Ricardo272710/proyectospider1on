@@ -8,23 +8,20 @@ handler.group = true
 handler.botAdmin = true
 
 global.Fem4 = ` 
-╭┈┈ ๑❀๑ •  *FEM* • ๑❀๑ ••:
-│
-│      ෆ _Encargadx:_  
-│      ෆ _Horario:_ (  )🇲🇽 (  )🇨🇴
-│      ෆ _Mod:_ 
-│
-│ㅤㅤ_ʚ Jugadorxs:_
-│ㅤ🌸• 
-│ㅤ🌸• 
-│ㅤ🌸• 
-│ㅤ🌸• 
-│   ㅤㅤ
-│ㅤㅤ_ʚ Suplentxs:_
-│ㅤ🌸• 
-│ㅤ🌸• 
-│
-│   _⊹ ִֶָ Donador/Donadora De Sala:_ 
-│
-╰───────────────๑❀๑ 
+* 𝐂𝐋𝐊 𝐅𝐄𝐌𝐄𝐍𝐈𝐍𝐎 •
+              𝟒𝐕𝐒𝟒
+
+🕦 𝐇𝐎𝐑𝐀: 
+
+      𝐉𝐔𝐆𝐀𝐃𝐎𝐑𝐀𝐒:
+🌸 ┇ 
+🌸 ┇  
+🌸 ┇ 
+🌸 ┇  
+
+      𝐒𝐔𝐏𝐋𝐄𝐍𝐓𝐄𝐒:
+🌸 ┇ 
+🌸 ┇
+
+ 📑┇𝐋𝐄𝐄𝐑 𝐑𝐄𝐆𝐋𝐀𝐒❕
 `;
