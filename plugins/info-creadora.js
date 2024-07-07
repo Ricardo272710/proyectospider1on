@@ -2,11 +2,13 @@ var handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 let pp = gataImg.getRandom()	
 const cat = `
-〔 𝗗𝗿𝗮𝗴𝗼𝗻 𝗕𝗼𝘁 〕
+〔 Spider 𝗕𝗼𝘁 〕
 
-*Desarrollador : +51 926 933 818*
-*Nombre : Yallico J-j*
+*Desarrollador : +593 97 913 3620*
+*Nombre : Ricardo* 
 
+*Desarrollador : +507 6420-6082*
+*Nombre : Anthony Org*
 `
 
 await conn.sendFile(m.chat, pp, 'gata.mp4', cat, fkontak)
