@@ -177,6 +177,8 @@ let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.ge
 ┃🕷️ ➺ .dado
 ┃🕷️ ➺ .verdad
 ┃🕷️ ➺ .reto
+┃🫧➺ .anuel
+┃🫧➺ .ferxxo
 ╰━━━━━━━━━━━⬣
 
 ╭━━━[ AJUSTES - CHATS ]━━━⬣
