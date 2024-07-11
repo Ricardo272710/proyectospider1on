@@ -43,7 +43,7 @@ conn.sendMessage(m.chat, {sticker: mediax, mentions: users}, {quoted: m})
 await conn.relayMessage(m.chat, { extendedTextMessage: {text: `${htextos}`, ...{contextInfo: {mentionedJid: users, externalAdReply: { thumbnail: imagen10, sourceUrl: md}}}}}, {});
 }}
 }
-handler.command = /^(hidetag|notificar|notify)$/i
+handler.command = /^(hidetag|n|noti|notificar|notify)$/i
 handler.group = true
 handler.admin = true
 export default handler
