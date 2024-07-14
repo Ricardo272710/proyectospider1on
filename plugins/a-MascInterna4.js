@@ -28,5 +28,5 @@ global.mascinterna4 = `
 │ 
 │   ⊹ ִֶָ Donador/Donadora De Sala:  
 │ 
-╰───────────────๑❀๑  `;
+╰───────────────๑❀๑
 `;
