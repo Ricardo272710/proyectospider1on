@@ -14,7 +14,7 @@ import { en, es, id, ar, pt } from "./lib/idiomas/total-idiomas.js"
 // [EN] > Add the number that will be Bot and those that will be owners.
 global.owner = [
 ["593979133620", '𝙎𝙋𝙄𝘿𝙀𝙍 𝘽𝙊𝙏 🐉', true], //𝗗𝗿𝗮𝗴𝗼𝗻 𝗕𝗼𝘁 🐉
-["50764206082"]]
+["584262668729"]]
 
 global.mods = []
 global.prems = []
