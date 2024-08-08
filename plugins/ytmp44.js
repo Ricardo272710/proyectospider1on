@@ -1,64 +1,7 @@
-/*
-Licencia MIT
-
-Derechos de autor (c) 2023 Arom
-
-Se concede permiso, sin cargo, a cualquier persona que obtenga una copia
-de este software y los archivos de documentación asociados (el "Software"),
-para usar, copiar, modificar, fusionar, publicar, distribuir, sublicenciar
-y/o vender copias del Software, y permitir a las personas a quienes se les 
-proporcione el Software a hacerlo, sujeto a las siguientes condiciones:
-
-El aviso de derechos de autor y esta nota de permiso deben incluirse en todas
-las copias o partes sustanciales del Software.
-
-EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O 
-IMPLÍCITA, INCLUYENDO PERO NO LIMITADO A GARANTÍAS DE COMERCIALIZACIÓN,
-IDONEIDAD PARA UN PROPÓSITO PARTICULAR E INFRACCIÓN. EN NINGÚN CASO LOS AUTORES 
-O TITULARES DEL COPYRIGHT SERÁN RESPONSABLES DE NINGUNA RECLAMACIÓN, DAÑO U 
-OTRA RESPONSABILIDAD, YA SEA EN UNA ACCIÓN DE CONTRATO, AGRAVIO O DE OTRO TIPO,
-DERIVADA DE, FUERA O EN CONEXIÓN CON EL SOFTWARE O SU USO U OTROS TRATOS EN EL 
-SOFTWARE.
-
-Créditos:
-- Código original: https://github.com/ruhend2001/ruhend-ytmp4
-- Editado por: https://github.com/BrunoSobrino
-*/
-
-import axios from 'axios';
-import { stringify } from 'querystring';
-import cheerio from 'cheerio';
-
-const ytmp44 = async (url) => {
-  const parameters = {
-    'url': url,
-    'format': 'mp4',
-    'lang': 'en'
-  };
-
-  try {
-    const conversionResponse = await axios.post('https://s64.notube.net/recover_weight.php', stringify(parameters));
-    if (!conversionResponse.data.token) {
-      throw new Error('No se recibió un token de la respuesta de conversión.');
-    }
-    const token = conversionResponse.data.token;
-    const downloadPageResponse = await axios.get('https://notube.net/en/download?token=' + token);
-
-    if (downloadPageResponse.status !== 200) {
-      throw new Error('No se pudo recuperar la página de descarga.');
-    }
-
-    const $ = cheerio.load(downloadPageResponse.data);
-    const result = {
-      'titulo': $('#breadcrumbs-section h2').text(),
-      'descargar': $('#breadcrumbs-section #downloadButton').attr('href')
-    };
-
-    return { status: true, resultados: result };
-  } catch (error) {
-    console.error('Error al convertir el video de YouTube:', error);
-    return { status: false, error: error.message };
-  }
-};
-
-export default ytmp44;
+{
+  "creator": "diego-ofc",
+  "title": "Charraska 2022 - La Bandida Car Audio - Dj Pepe & Jose Gonzalez (RMS CAR AUDIO)",
+  "author": "Dj Jose Gonzalez",
+  "video_url": "https://rr2---sn-p5qs7nzk.googlevideo.com/videoplayback?expire=1722932882&ei=MoqxZtftCOCKkucPvrOkmA8&ip=3.85.134.103&id=o-AIePvXsPkFA5aQMdouahdYnGfLRf8yNX0D-F3xrlD5TZ&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=O6&mm=31%2C29&mn=sn-p5qs7nzk%2Csn-p5qlsnd6&ms=au%2Crdu&mv=m&mvi=2&pl=17&initcwndbps=5038750&spc=NO7bARhsAb-4T6KAR2vYrzvswfARdQ7f3tPvWFPMVQ-OU02XlxbSNhnLzv56&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&cnr=14&ratebypass=yes&dur=1190.069&lmt=1693091053745049&mt=1722910892&fvip=5&c=ANDROID&txp=5318224&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRQIgfjfV9ES4qpi2LIS07tglb70ahZQaCct8gASi7Be195gCIQClV6X9B307vYx2K9GQeVHuTN39ZUSbYCNEES2Z5WQERQ%3D%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AGtxev0wRQIhAKl97FYCt6P4jb41ORm08Z3uU8Zb20iNrnSosGZBCV_zAiA55AgfqXba04He-YyQVDcDf0D4OxEFVq61VuEZ6zbTrw%3D%3D",
+  "description": "LINK DE DESCARGA MP3\r\n\r\nhttps://www.mediafire.com/file/3z65s3896zl0rgd/Charraska_2022_-_La_Bandida_Car_Audio_-_Dj_Pepe_%2526_Jose_Gonzalez_%2528RMS_CAR_AUDIO%2529.mp3/file"
+}
