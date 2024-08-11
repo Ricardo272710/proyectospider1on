@@ -2,7 +2,6 @@
 
 import fetch from 'node-fetch'
 import axios from 'axios'
-import { load } from 'cheerio'
 let handler = async (m, {text, usedPrefix, command, conn}) => {
 if (!text) throw '╰⊱❗️⊱ *𝙇𝙊 𝙐𝙎𝙊́ 𝙈𝘼𝙇 | 𝙐𝙎𝙀𝘿 𝙄𝙏 𝙒𝙍𝙊𝙉𝙂* ⊱❗️⊱╮\n\n𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙀𝙇 𝙉𝙊𝙈𝘽𝙍𝙀 𝘿𝙀 𝘼𝙇𝙂𝙐𝙉𝘼 𝙋𝙀𝙇𝙄𝘾𝙐𝙇𝘼 𝘼 𝘽𝙐𝙎𝘾𝘼𝙍'   
 let aaaa = await searchC(text)
