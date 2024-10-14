@@ -1,67 +1,39 @@
-import yts from 'yt-search';
+const fs = require('fs');
+const ytdl = require('ytdl-core');
+const { Client } = require('whatsapp-web.js');
 
-let handler = async (m, { conn, command, args, text, usedPrefix }) => {
+const client = new Client();
 
-    if (!text) {
-
-        return conn.reply(m.chat, '*💙Ingresa el nombre de una cancion o video*', m);
-
-    }
-
-    await m.react('🕛');
-
-    let res = await yts(text);
-
-    let play = res.videos[0];
-
-    if (!play) {
-
-        throw `Error: Vídeo o Audio no Encontrado`;
-
-    }
-
-    let { title, thumbnail, ago, timestamp, views, videoId, url } = play;
-
-    let txt = '```Hatsune Miku Download```\n';
-
-    txt += '┗☵☵☵☵☵☵☵🌱🌱🌱☵☵☵☵☵☵┛\n';
-
-    txt += `💙 *𝚃𝚒𝚝𝚞𝚕𝚘* : _${title}_\n`;
-
-    txt += `💙 *𝙲𝚛𝚎𝚊cion* : _${ago}_\n`;
-
-    txt += `💙 *𝙳𝚞𝚛𝚊𝚌𝚒𝚘𝚗* : _${timestamp}_\n`;
-
-    txt += `💙 *𝚅𝚒𝚜𝚒𝚝𝚊𝚜* : _${views.toLocaleString()}_\n`;
-
-    txt += `💙 *𝙻𝚒𝚗𝚔* : _https://www.youtube.com/watch?v=${videoId}_\n`;
-
-    txt += '┗☵☵☵☵☵☵☵|💙💙💙|☵☵☵☵☵☵☵┛ \n';
+client.on('message', async message => {
+  if (message.body.startsWith('.play ')) {
+    const songName = message.body.slice(6);
     
-    txt += '  Creador: (ㅎㅊDEPOOLㅊㅎ)        ';
+    try {
+      const videoResult = await searchSong(songName); // Función para buscar la canción en YouTube
+      const videoUrl = videoResult.link;
+      
+      // Descargar la canción
+      const stream = ytdl(videoUrl, { filter: 'audioonly' });
+      
+      // Envía la música
+      client.sendMessage(message.from, {
+        audio: stream,
+        mimetype: 'audio/mp4' // o 'audio/mpeg', según el formato
+      });
+      
+    } catch (error) {
+      message.reply('No se pudo encontrar la canción.');
+    }
+  }
+});
 
-    txt += '             💙HATSUNE MIKU💙          ';
+// Inicializar el bot
+client.initialize();
 
-    await conn.sendButton2(m.chat, txt, '. ', thumbnail, [
+async function searchSong(songName) {
+  // Aquí deberías implementar la lógica para buscar la canción en YouTube
+  // y devolver el link del video.
+  // Puedes usar una API o simplemente hacer web scraping.
+}
 
-        ['MP3🎧', `${usedPrefix}ytmp3 ${url}`],
-
-        ['MP3DOC💾', `${usedPrefix}ytmp3doc ${url}`],
-
-        ['MP4🎥', `${usedPrefix}ytmp4 ${url}`], 
-
-        ['MP4DOC🎬', `${usedPrefix}ytmp4doc ${url}`]
-
-        ], null, [['Canal', 'https://whatsapp.com/channel/0029VajYamSIHphMAl3ABi1o']], m);
-    
-    await m.react('☑️');
-
-};
-
-handler.help = ['play'];
-
-handler.tags = ['downloader'] 
-
-handler.command = ['play',];
-
-export default handler;
+```
