@@ -1,63 +1,102 @@
 /*
 
-- PLUGIN PLAY MUSIC
+- PLUGIN PLAY YOUTUBE
 - By Kenisawa
 
 */
 
-import fetch from 'node-fetch'
-import yts from 'yt-search'
+import axios from 'axios';
+import yts from 'yt-search';
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) throw m.reply(`Ingresa una consulta\n*✧ Ejemplo:* ${usedPrefix}${command} ULTIMATE - xneymar`);
-conn.sendMessage(m.chat, { react: { text: "🕒", key: m.key } });
+
+  if (!text) throw m.reply(`Ejemplo de uso: ${usedPrefix + command} Joji Ew`);
+  
     let results = await yts(text);
     let tes = results.all[0]
-    let {
-      title,
-      thumbnail,
-      timestamp,
-      views,
-      ago,
-      url
-    } = tes;
-  let d2 = await fetch(`https://exonity.tech/api/ytdlp2-faster?apikey=adminsepuh&url=${url}`)
-  let dp = await d2.json()
-  m.reply(`_✧ Enviando ${dp.result.title} (${dp.result.duration})_\n\n> ${url}`)
+    
+const baseUrl = 'https://cuka.rfivecode.com';
+const cukaDownloader = {
+  youtube: async (url, exct) => {
+    const format = [ 'mp3', 'mp4' ];
+    try {
+      const response = await fetch(`${baseUrl}/download`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+          body: JSON.stringify({ url, format: exct })
+      });
+
+      const data = await response.json();
+      return data;
+      console.log('Data:' + data);
+    } catch (error) {
+      return { success: false, message: error.message };
+      console.error('Error:', error);
+    }
+  },
+  tiktok: async (url) => {
+    try {
+      const response = await fetch(`${baseUrl}/tiktok/download`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+          body: JSON.stringify({ url })
+      });
+
+      const data = await response.json();
+      return data;
+      console.log('Data:' + data);
+    } catch (error) {
+      return { success: false, message: error.message };
+      console.error('Error:', error);
+    }
+  },
+  spotify: async (url) => {
+    try {
+      const response = await fetch(`${baseUrl}/spotify/download`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+          body: JSON.stringify({ url })
+      });
+
+      const data = await response.json();
+      return data;
+      console.log('Data:' + data);
+    } catch (error) {
+      return { success: false, message: error.message };
+      console.error('Error:', error);
+    }
+  }
+}
+
+let dataos = await cukaDownloader.youtube(tes.url, "mp3")
+console.log(dataos)
+let { title, thumbnail, quality, downloadUrl } = dataos
+  m.reply(`_✧ Enviando ${title} (${quality})_\n\n> ${tes.url}`)
       const doc = {
-      audio: { url: dp.result.media.mp3 },
+      audio: { url: downloadUrl },
       mimetype: 'audio/mp4',
       fileName: `${title}.mp3`,
       contextInfo: {
         externalAdReply: {
           showAdAttribution: true,
           mediaType: 2,
-          mediaUrl: url,
+          mediaUrl: tes.url,
           title: title,
-          sourceUrl: url,
+          sourceUrl: tes.url,
           thumbnail: await (await conn.getFile(thumbnail)).data
         }
       }
     };
     await conn.sendMessage(m.chat, doc, { quoted: m });
-    
-/*const getBuffer = async (url) => {
-  try {
-    const response = await fetch(url);
-    const buffer = await response.arrayBuffer();
-    return Buffer.from(buffer);
-  } catch (error) {
-    console.error("Error al obtener el buffer", error);
-    throw new Error("Error al obtener el buffer");
-  }
 }
-    let audiop = await getBuffer(dp.result.media.mp3)
-	await conn.sendFile(m.chat, audiop, `${title}.mp3`, ``, m)*/
-	await conn.sendMessage(m.chat, { react: { text: '✅', key: m.key }})
-}
-handler.help = ['play']
-handler.tags = ['downloader']
-handler.command = /^(play|song)$/i
-handler.premium = false
-handler.register = true
-export default handler
+handler.help = ['play'];
+handler.tags = ['downloader'];
+handler.command = /^(play|song)$/i;
+
+export default handler;
