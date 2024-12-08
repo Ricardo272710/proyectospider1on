@@ -1,102 +1,45 @@
-/*
-
-- PLUGIN PLAY YOUTUBE
-- By Kenisawa
-
-*/
-
-import axios from 'axios';
 import yts from 'yt-search';
 
-let handler = async (m, { conn, text, usedPrefix, command }) => {
-
-  if (!text) throw m.reply(`Ejemplo de uso: ${usedPrefix + command} Joji Ew`);
-  
-    let results = await yts(text);
-    let tes = results.all[0]
+let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, command }) => {
     
-const baseUrl = 'https://cuka.rfivecode.com';
-const cukaDownloader = {
-  youtube: async (url, exct) => {
-    const format = [ 'mp3', 'mp4' ];
-    try {
-      const response = await fetch(`${baseUrl}/download`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-          body: JSON.stringify({ url, format: exct })
-      });
+    if (!text) throw `⭐ 𝘐𝘯𝘨𝘳𝘦𝘴𝘢 𝘦𝘭 𝘵𝘪́𝘵𝘶𝘭𝘰 𝘥𝘦 𝘭𝘢 𝘤𝘢𝘯𝘤𝘪𝘰́𝘯 𝘥𝘦 𝘠𝘰𝘶𝘛𝘶𝘣𝘦 𝘲𝘶𝘦 𝘥𝘦𝘴𝘦𝘢𝘴 𝘥𝘦𝘴𝘤𝘢𝘳𝘨𝘢𝘳.
 
-      const data = await response.json();
-      return data;
-      console.log('Data:' + data);
-    } catch (error) {
-      return { success: false, message: error.message };
-      console.error('Error:', error);
+» 𝘌𝘫𝘦𝘮𝘱𝘭𝘰:
+${usedPrefix + command} Feid - Luna`;
+    
+    await conn.sendMessage(m.chat, { react: { text: '🕓', key: m.key }});
+    
+    const videoSearch = await yts(text);
+    if (!videoSearch.all.length) {
+        return global.errori;
     }
-  },
-  tiktok: async (url) => {
-    try {
-      const response = await fetch(`${baseUrl}/tiktok/download`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-          body: JSON.stringify({ url })
-      });
+    
+    const vid = videoSearch.all[0];
+    const videoUrl = vid.url;
+    const apiUrl = https://deliriussapi-oficial.vercel.app/download/ytmp4?url=${encodeURIComponent(videoUrl)};
+    const apiResponse = await fetch(apiUrl);
+    const delius = await apiResponse.json();
 
-      const data = await response.json();
-      return data;
-      console.log('Data:' + data);
-    } catch (error) {
-      return { success: false, message: error.message };
-      console.error('Error:', error);
+    if (!delius.status) {
+        return global.errori;
     }
-  },
-  spotify: async (url) => {
-    try {
-      const response = await fetch(`${baseUrl}/spotify/download`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-          body: JSON.stringify({ url })
-      });
+    
+    const downloadUrl = delius.data.download.url;
 
-      const data = await response.json();
-      return data;
-      console.log('Data:' + data);
-    } catch (error) {
-      return { success: false, message: error.message };
-      console.error('Error:', error);
-    }
-  }
-}
+    // Crear el mensaje informativo del video/audio
+    let body = `01:27 ━━━━━⬤──── ${vid.timestamp || 'Desconocido'}
+⇄ㅤ   ◁   ㅤ  ❚❚ㅤ     ▷ㅤ   ↻
+𝙀𝙡𝙞𝙩𝙚 𝘽𝙤𝙩 𝙂𝙡𝙤𝙗𝙖𝙡`;
 
-let dataos = await cukaDownloader.youtube(tes.url, "mp3")
-console.log(dataos)
-let { title, thumbnail, quality, downloadUrl } = dataos
-  m.reply(`_✧ Enviando ${title} (${quality})_\n\n> ${tes.url}`)
-      const doc = {
-      audio: { url: downloadUrl },
-      mimetype: 'audio/mp4',
-      fileName: `${title}.mp3`,
-      contextInfo: {
-        externalAdReply: {
-          showAdAttribution: true,
-          mediaType: 2,
-          mediaUrl: tes.url,
-          title: title,
-          sourceUrl: tes.url,
-          thumbnail: await (await conn.getFile(thumbnail)).data
-        }
-      }
-    };
-    await conn.sendMessage(m.chat, doc, { quoted: m });
-}
-handler.help = ['play'];
-handler.tags = ['downloader'];
-handler.command = /^(play|song)$/i;
+    // Enviar el mensaje informativo con la imagen
+    await conn.sendMessage(m.chat, { 
+        image: { url: vid.thumbnail }, 
+        caption: body 
+    }, { quoted: m });
 
+    await conn.sendMessage(m.chat, { react: { text: '✅', key: m.key }});
+    await conn.sendMessage(m.chat, { audio: { url: downloadUrl }, mimetype: 'audio/mpeg' }, { quoted: m });
+};
+
+handler.command = ['play', 'youtube'];
 export default handler;
