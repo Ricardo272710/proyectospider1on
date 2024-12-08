@@ -22,7 +22,7 @@ let img = await q.download?.()
 let error
 try {
 const This = await processing(img, "enlace")
-conn.sendFile(m.chat, This, '', '🧃 Toma tu foto', m)
+conn.sendFile(m.chat, This, '', '🧃 AQUI ESTA SU IMAGEN HD , COMPLETADO', m)
 } catch (er) {
 error = true
 } finally {
