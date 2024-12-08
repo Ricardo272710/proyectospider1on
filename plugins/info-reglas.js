@@ -16,8 +16,6 @@ Ojo Para Mayor Confianza Al Momento De Usted Hacer El Pago Yo Lo Estaria Agregan
 Contacto: @proyecto_r.a_
 Wpp: +593 97 913 3620
 
-Contacto: @Anthonyorg
-Wpp: +507 6420-6082
 
 Metodo de Pago:
 ✔️Paypal
